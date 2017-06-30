@@ -1,0 +1,157 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ */
+?>
+
+<div class="page-header">
+    <h1>
+        Search posts
+    </h1>
+    <p>
+		<?php echo $this->tag->linkTo( [ "posts/new", "Create posts" ] ) ?>
+    </p>
+</div>
+
+<?php echo $this->getContent() ?>
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Body</th>
+            <th>Slug</th>
+            <th>Author</th>
+            <th>Post Of Type</th>
+            <th>Categories</th>
+
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+		<?php foreach ( $posts as $post ): ?>
+            <tr>
+                <td><?php echo $post->id ?></td>
+                <td><?php echo $post->title ?></td>
+                <td><?php echo $post->body ?></td>
+                <td><?php echo $post->slug ?></td>
+                <td><?php echo $post->Authors->name_f_l ?></td>
+                <td><?php echo $post->PostTypes->name ?></td>
+                <td><?php
+	                $aCat = array();
+					foreach ( $post->PostCategories2 as $cat ) {
+						//echo $cat;
+						$aCat[] = $cat->name;
+					}
+					echo implode(', ',$aCat);
+					?></td>
+
+                <td><?php echo $this->tag->linkTo( [
+						"posts/edit/" . $post->id,
+						"Edit"
+					] ); ?></td>
+                <td><?php echo $this->tag->linkTo( [
+						"posts/delete/" . $post->id,
+						"Delete"
+					] ); ?></td>
+            </tr>
+		<?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+
+<?php
+echo $this->tag->form( [
+		"posts/search",
+		"autocomplete" => "off",
+		"class"        => "form-horizontal"
+	] );
+?>
+
+<div class="form-group">
+    <label for="fieldId" class="col-sm-2 control-label">Id</label>
+    <div class="col-sm-10">
+		<?php echo $this->tag->textField( [
+			"id",
+			"type"  => "number",
+			"class" => "form-control",
+			"id"    => "fieldId"
+		] ) ?>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="fieldTitle" class="col-sm-2 control-label">Title</label>
+    <div class="col-sm-10">
+		<?php echo $this->tag->textField( [
+			"title",
+			"size"  => 30,
+			"class" => "form-control",
+			"id"    => "fieldTitle"
+		] ) ?>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="fieldBody" class="col-sm-2 control-label">Body</label>
+    <div class="col-sm-10">
+		<?php echo $this->tag->textArea( [
+			"body",
+			"cols"  => 30,
+			"rows"  => 4,
+			"class" => "form-control",
+			"id"    => "fieldBody"
+		] ) ?>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="fieldSlug" class="col-sm-2 control-label">Slug</label>
+    <div class="col-sm-10">
+		<?php echo $this->tag->textField( [
+			"slug",
+			"size"  => 30,
+			"class" => "form-control",
+			"id"    => "fieldSlug"
+		] ) ?>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="fieldAuthorId" class="col-sm-2 control-label">Author</label>
+    <div class="col-sm-10">
+		<?php echo $this->tag->textField( [
+			"author_id",
+			"type"  => "number",
+			"class" => "form-control",
+			"id"    => "fieldAuthorId"
+		] ) ?>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="fieldPostTypeId" class="col-sm-2 control-label">Post Of Type</label>
+    <div class="col-sm-10">
+		<?php echo $this->tag->textField( [
+			"post_type_id",
+			"type"  => "number",
+			"class" => "form-control",
+			"id"    => "fieldPostTypeId"
+		] ) ?>
+    </div>
+</div>
+
+
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+		<?php echo $this->tag->submitButton( [
+			"Search",
+			"class" => "btn btn-default"
+		] ) ?>
+    </div>
+</div>
+
+<?php echo $this->tag->endForm(); ?>

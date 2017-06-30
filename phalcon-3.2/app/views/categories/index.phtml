@@ -1,0 +1,22 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ * @var \Categories $categories
+ */
+?>
+
+<div class="page-header">
+    <h1>
+        Authors list
+    </h1>
+</div>
+
+<?php echo $this->getContent() ?>
+
+<div class="row">
+    <ul>
+	<?php foreach ( $categories as $category ): ?>
+        <li><pre>id: <?php echo $category->id ?> &#09; Name:<?php echo $category->name ?> &#09; CountPosts:<?php echo $category->countPostCategories() ?></pre></li>
+	<?php endforeach; ?>
+    </ul>
+</div>

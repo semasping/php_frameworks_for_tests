@@ -1,0 +1,22 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ * @var \Authors $authors
+ */
+?>
+
+<div class="page-header">
+    <h1>
+        Authors list
+    </h1>
+</div>
+
+<?php echo $this->getContent() ?>
+
+<div class="row">
+    <ul>
+	<?php foreach ( $authors as $author ): ?>
+        <li><pre>id: <?php echo $author->id ?> &#09; Name:<?php echo $author->name_f_l ?> &#09; CountPosts:<?php echo $author->countPosts() ?></pre></li>
+	<?php endforeach; ?>
+    </ul>
+</div>
