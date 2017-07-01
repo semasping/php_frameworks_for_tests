@@ -1,0 +1,7 @@
+phalcon-3.1: :   547384: 
+Warning: A non-numeric value encountered in C:\works\testsPHPFrameworks\benchmark\php-framework-benchmark\benchmarks\avg_ms.php on line 6
+
+Warning: A non-numeric value encountered in C:\works\testsPHPFrameworks\benchmark\php-framework-benchmark\benchmarks\avg_ms.php on line 6
+
+Warning: Division by zero in C:\works\testsPHPFrameworks\benchmark\php-framework-benchmark\benchmarks\avg_ms.php on line 6
+NAN: 10
