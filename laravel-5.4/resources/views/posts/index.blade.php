@@ -29,14 +29,11 @@
                     <td> {{$post->slug}} </td>
                     <td> {{$post->author->name_f_l}}</td>
                     <td> {{$post->postType->name}} </td>
-                    <td><?php
-						/*$aCat = array();
-						foreach ( $post->PostCategories2 as $cat ) {
-							//echo $cat;
-							$aCat[] = $cat->name;
-						}
-						echo implode( ', ', $aCat );*/
-						?></td>
+                    <td>
+                        @foreach($post->categories as $category)
+                            {{$category->name}};
+                        @endforeach
+                    </td>
                 </tr>
             @endforeach
             </tbody>
