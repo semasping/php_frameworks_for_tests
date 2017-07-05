@@ -1,7 +1,11 @@
 #!/bin/sh
 
 list="
-#laravel
+
+laravel-index
+laravel-authors
+laravel-categories
+laravel-posts
 phalcon-index
 phalcon-authors
 phalcon-categories
