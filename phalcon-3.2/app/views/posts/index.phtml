@@ -27,8 +27,7 @@
             <th>Post Of Type</th>
             <th>Categories</th>
 
-            <th></th>
-            <th></th>
+
         </tr>
         </thead>
         <tbody>
@@ -49,109 +48,10 @@
 					echo implode(', ',$aCat);
 					?></td>
 
-                <td><?php echo $this->tag->linkTo( [
-						"posts/edit/" . $post->id,
-						"Edit"
-					] ); ?></td>
-                <td><?php echo $this->tag->linkTo( [
-						"posts/delete/" . $post->id,
-						"Delete"
-					] ); ?></td>
+
             </tr>
 		<?php endforeach; ?>
         </tbody>
     </table>
 </div>
 
-<?php
-echo $this->tag->form( [
-		"posts/search",
-		"autocomplete" => "off",
-		"class"        => "form-horizontal"
-	] );
-?>
-
-<div class="form-group">
-    <label for="fieldId" class="col-sm-2 control-label">Id</label>
-    <div class="col-sm-10">
-		<?php echo $this->tag->textField( [
-			"id",
-			"type"  => "number",
-			"class" => "form-control",
-			"id"    => "fieldId"
-		] ) ?>
-    </div>
-</div>
-
-<div class="form-group">
-    <label for="fieldTitle" class="col-sm-2 control-label">Title</label>
-    <div class="col-sm-10">
-		<?php echo $this->tag->textField( [
-			"title",
-			"size"  => 30,
-			"class" => "form-control",
-			"id"    => "fieldTitle"
-		] ) ?>
-    </div>
-</div>
-
-<div class="form-group">
-    <label for="fieldBody" class="col-sm-2 control-label">Body</label>
-    <div class="col-sm-10">
-		<?php echo $this->tag->textArea( [
-			"body",
-			"cols"  => 30,
-			"rows"  => 4,
-			"class" => "form-control",
-			"id"    => "fieldBody"
-		] ) ?>
-    </div>
-</div>
-
-<div class="form-group">
-    <label for="fieldSlug" class="col-sm-2 control-label">Slug</label>
-    <div class="col-sm-10">
-		<?php echo $this->tag->textField( [
-			"slug",
-			"size"  => 30,
-			"class" => "form-control",
-			"id"    => "fieldSlug"
-		] ) ?>
-    </div>
-</div>
-
-<div class="form-group">
-    <label for="fieldAuthorId" class="col-sm-2 control-label">Author</label>
-    <div class="col-sm-10">
-		<?php echo $this->tag->textField( [
-			"author_id",
-			"type"  => "number",
-			"class" => "form-control",
-			"id"    => "fieldAuthorId"
-		] ) ?>
-    </div>
-</div>
-
-<div class="form-group">
-    <label for="fieldPostTypeId" class="col-sm-2 control-label">Post Of Type</label>
-    <div class="col-sm-10">
-		<?php echo $this->tag->textField( [
-			"post_type_id",
-			"type"  => "number",
-			"class" => "form-control",
-			"id"    => "fieldPostTypeId"
-		] ) ?>
-    </div>
-</div>
-
-
-<div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-		<?php echo $this->tag->submitButton( [
-			"Search",
-			"class" => "btn btn-default"
-		] ) ?>
-    </div>
-</div>
-
-<?php echo $this->tag->endForm(); ?>

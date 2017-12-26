@@ -4,10 +4,10 @@ list="
 
 laravel-index
 laravel-authors
-laravel-categories
 laravel-posts
+laravel-categories
 phalcon-index
 phalcon-authors
-phalcon-categories
 phalcon-posts
+phalcon-categories
 "
