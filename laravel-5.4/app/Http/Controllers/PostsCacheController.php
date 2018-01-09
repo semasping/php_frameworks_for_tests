@@ -16,7 +16,7 @@ class PostsCacheController extends Controller
     public function index()
     {
         $posts = Cache::rememberForever('posts2', function () {
-            $posts = Posts::with(['author', 'postType', 'categories'])->all();
+            $posts = Posts::all();
             //dump($posts);
             return $posts;
         });
