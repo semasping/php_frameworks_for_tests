@@ -1,6 +1,6 @@
 # Another one Benchmark of php frameworks.
 
-In my opinion minimal functionаl can't show real behavior of the framework. I have decided to test php frameworks by middle complexity application. This app will be represented as "blogs platform". It consist of data about authors, theirs posts by categories and types. Such app can be realized in any framework "from a box".
+In my opinion minimal functional can't show real behavior of the framework. I have decided to test php frameworks by middle complexity application. This app will be represented as "blogs platform". It consist of data about authors, theirs posts by categories and types. Such app can be realized in any framework "from a box".
 
 Pages for testing:
 
@@ -23,7 +23,7 @@ Centos 7.2 + vestacp + apache2.4 + php 7.1.10 + 10.2.8-MariaDB
 ### Frameworks for test
 Ready for test:
 * Phalcon 3.2
-* Laravel 5.4
+* Laravel 5.4 + Cache + EagerLoading
 
 #### Roadmap
 * Implementing a test application and running tests on Symfony

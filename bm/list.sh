@@ -5,6 +5,9 @@ list="
 laravel-index
 laravel-authors
 laravel-posts
+laravel-posts-cache
+laravel-posts-el
+laravel-posts-el-cache
 laravel-categories
 phalcon-index
 phalcon-authors

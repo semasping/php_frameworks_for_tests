@@ -15,5 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/posts/','PostsController@index');
+Route::get('/posts-cache/','PostsCacheController@index');
 Route::get('/categories/','CategoriesController@index');
 Route::get('/authors/','AuthorsController@index');
+Route::get('/posts-el/','PostsEagerLoadingController@index');
+Route::get('/posts-el-cache/','PostsEagerLoadingCacheController@index');
