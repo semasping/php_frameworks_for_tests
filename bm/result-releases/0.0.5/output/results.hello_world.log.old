@@ -1,0 +1,11 @@
+laravel-index: 4.65:  6510464: 0.1853151: 222
+laravel-authors: 6.86:  7700472: 0.2023183: 261
+laravel-posts: 0.04: 15868472: 5.1036414: 265
+laravel-posts-cache: 8.57:  7846048: 0.2252592: 253
+laravel-posts-el: 8.77:  7721888: 0.210147: 241
+laravel-posts-el-cache: 8.99:  7723008: 0.2262067: 241
+laravel-categories: 6.93:  7873656: 0.2335941: 262
+phalcon-index: 277.09:   457200: 0.005565: 8
+phalcon-authors: 25.82:   582984: 0.0744794: 10
+phalcon-posts: 0.10:  2350352: 2.2571393: 14
+phalcon-categories: 14.21:   594752: 0.1310851: 10

@@ -1,0 +1,43 @@
+This is ApacheBench, Version 2.3 <$Revision: 1430300 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking php-frameworks.semasping.info (be patient)
+
+
+Server Software:        Apache/2.4.6
+Server Hostname:        php-frameworks.semasping.info
+Server Port:            80
+
+Document Path:          /phalcon-3.2/public/authors
+Document Length:        5558 bytes
+
+Concurrency Level:      10
+Time taken for tests:   3.002 seconds
+Complete requests:      79
+Failed requests:        0
+Write errors:           0
+Total transferred:      471393 bytes
+HTML transferred:       439082 bytes
+Requests per second:    26.31 [#/sec] (mean)
+Time per request:       380.017 [ms] (mean)
+Time per request:       38.002 [ms] (mean, across all concurrent requests)
+Transfer rate:          153.34 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   3.2      1      16
+Processing:    86  358  89.8    376     516
+Waiting:       86  358  89.7    375     516
+Total:         87  361  89.8    377     527
+
+Percentage of the requests served within a certain time (ms)
+  50%    373
+  66%    417
+  75%    437
+  80%    448
+  90%    460
+  95%    485
+  98%    499
+  99%    527
+ 100%    527 (longest request)

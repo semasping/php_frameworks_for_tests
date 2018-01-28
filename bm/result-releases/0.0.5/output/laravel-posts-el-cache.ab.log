@@ -1,0 +1,44 @@
+This is ApacheBench, Version 2.3 <$Revision: 1430300 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking php-frameworks.semasping.info (be patient)
+
+
+Server Software:        Apache/2.4.6
+Server Hostname:        php-frameworks.semasping.info
+Server Port:            80
+
+Document Path:          /laravel-5.4/public/posts-el-cache
+Document Length:        49650 bytes
+
+Concurrency Level:      10
+Time taken for tests:   3.078 seconds
+Complete requests:      28
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      28
+Total transferred:      1419550 bytes
+HTML transferred:       1390200 bytes
+Requests per second:    9.10 [#/sec] (mean)
+Time per request:       1099.128 [ms] (mean)
+Time per request:       109.913 [ms] (mean, across all concurrent requests)
+Transfer rate:          450.45 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   3.4      1      11
+Processing:   799  982  99.7   1011    1172
+Waiting:      753  943  93.9    953    1107
+Total:        800  985  99.7   1012    1173
+
+Percentage of the requests served within a certain time (ms)
+  50%   1012
+  66%   1027
+  75%   1057
+  80%   1077
+  90%   1093
+  95%   1133
+  98%   1173
+  99%   1173
+ 100%   1173 (longest request)

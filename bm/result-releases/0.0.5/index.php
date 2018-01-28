@@ -30,7 +30,7 @@ list($chart_rpm, $div_rpm) = make_graph('rps', 'Throughput', 'requests per secon
 list($chart_mem, $div_mem) = make_graph('memory', 'Memory', 'peak memory (MB)');
 
 // Exec Time Benchmark
-list($chart_time, $div_time) = make_graph('time', 'Exec Time', 'ms');
+list($chart_time, $div_time) = make_graph('time', 'Exec Time, ms', 'ms');
 
 // Included Files
 list($chart_file, $div_file) = make_graph('file', 'Included Files', 'count');

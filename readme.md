@@ -22,7 +22,7 @@ Centos 7.2 + vestacp + apache2.4 + php 7.1.10 + 10.2.8-MariaDB
 
 ### Frameworks for test
 Ready for test:
-* Phalcon 3.2
+* Phalcon 3.2 + Cache
 * Laravel 5.4 + Cache + EagerLoading
 
 #### Roadmap

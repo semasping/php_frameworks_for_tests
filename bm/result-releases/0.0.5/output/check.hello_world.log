@@ -1,0 +1,44 @@
+laravel-index
+Document Length:        2355 bytes
+Failed requests:        0
+---
+laravel-authors
+Document Length:        6371 bytes
+Failed requests:        0
+---
+laravel-posts
+Document Length:        482161 bytes
+Failed requests:        0
+---
+laravel-posts-cache
+Document Length:        482161 bytes
+Failed requests:        0
+---
+laravel-posts-el
+Document Length:        49610 bytes
+Failed requests:        0
+---
+laravel-posts-el-cache
+Document Length:        49650 bytes
+Failed requests:        0
+---
+laravel-categories
+Document Length:        10699 bytes
+Failed requests:        0
+---
+phalcon-index
+Document Length:        1614 bytes
+Failed requests:        0
+---
+phalcon-authors
+Document Length:        5558 bytes
+Failed requests:        0
+---
+phalcon-posts
+Document Length:        347228 bytes
+Failed requests:        0
+---
+phalcon-categories
+Document Length:        9236 bytes
+Failed requests:        0
+---
