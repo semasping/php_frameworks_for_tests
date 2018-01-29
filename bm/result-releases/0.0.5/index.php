@@ -1,7 +1,7 @@
 <?php
 
 Parse_Results: {
-    require __DIR__ . '/libs/parse_results.php';
+    require __DIR__ . '/../libs/parse_results.php';
     $results = parse_results(__DIR__ . '/output/results.hello_world.log');
 }
 
@@ -12,13 +12,13 @@ Load_Theme: {
     }
 
     if ($theme === 'default') {
-        require __DIR__ . '/libs/make_graph.php';
+        require __DIR__ . '/../libs/make_graph.php';
     } else {
-        $file = __DIR__ . '/libs/' . $theme . '/make_graph.php';
+        $file = __DIR__ . '/../libs/' . $theme . '/make_graph.php';
         if (is_readable($file)) {
             require $file;
         } else {
-            require __DIR__ . '/libs/make_graph.php';
+            require __DIR__ . '/../libs/make_graph.php';
         }
     }
 }
