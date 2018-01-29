@@ -12,5 +12,6 @@ laravel-categories
 phalcon-index
 phalcon-authors
 phalcon-posts
+phalcon-postswc
 phalcon-categories
 "
