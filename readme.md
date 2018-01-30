@@ -35,3 +35,6 @@ Ready for test:
 ### Some tests result 
 * https://steemit.com/programming/@semasping/benchmarking-php-frameworks-part-3-phalcon
 * https://steemit.com/programming/@semasping/benchmark-php-frameworks-part-5-laravel
+
+## License
+The MIT License
